@@ -4,7 +4,7 @@ I'm running this on my homelab using Debian. Proxmox in KVM as the hypervisor. 1
 ## Servers:
 * ubuntu-ctrlr = ansible and k8s controller.
 * ubuntu-ansible-node-(1-3) = hosts for ansible, no k8s
-* ubuntu-k8s-node-(1-2) = k8s cluster with ubuntu-ctrlrl. just a basic nginx instance.
+* ubuntu-k8s-node-(1-2) = k8s cluster with ubuntu-ctrlr. Just a basic nginx service running, nodeport + flannel overlay.
 
 ## Templates:
 * ubuntu-22.04-template = Template using Cloud-Init with ssd emulation and QEMU agent installed along with the "showcase" ssh-key.
