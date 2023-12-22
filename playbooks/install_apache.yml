@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: ansible_nodes
   become: true
   tasks:
 
