@@ -7,8 +7,6 @@
 * Prometheus for monitoring using Grafana.
 * Snort V3 as IDS with simple rules.
 * Suricata for IPS with simple rules.
-* Windows server with AD.
-* WIndows client.
 
 ## Credentials
 *SSH:*
@@ -19,7 +17,6 @@
 *VM:*
 * proxmox: root / proxmox
 * VMs: micke / 123
-* Windows: micke@eywa.net / 123
 
 *Metrics:*
 * Grafana: admin / 12345
