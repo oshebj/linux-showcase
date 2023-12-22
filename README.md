@@ -5,7 +5,7 @@
 * Ansible with hosts and a few simple playbooks for provisioning/bootstrap.
 * Kubernetes with nodes running a simple webservice.
 * Prometheus for monitoring using Grafana.
-* Snort as IDS with simple rules.
+* Snort V3 as IDS with simple rules.
 * Suricata for IPS with simple rules.
 * Windows server with AD.
 * WIndows client.
@@ -30,4 +30,4 @@
 
 ## Networking
 Nothing special. DHCP with reserved leases from FW. Controller is static.
-This is just a demo.
+This is just a demo. See Snort and Suricata config files.
