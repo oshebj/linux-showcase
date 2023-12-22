@@ -1,9 +1,9 @@
 # dhcp on my home network
-[ansible nodes]
+[ansible_nodes]
 192.168.122.157
 192.168.122.166
 192.168.122.11
 
-[k8s nodes]
+[k8s_nodes]
 192.168.122.149
 192.168.122.215
