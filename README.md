@@ -26,8 +26,3 @@ To showcase knowledge withing Linux.
   - sshkey: showcase
   - ipconfig: dhcp
   - storage: ssd emulator
-
-servers:
-ansible-node-1: 192.168.122.157
-ansible-node-2: 192.168.122.166
-ansible-node-3: 192.168.122.11
