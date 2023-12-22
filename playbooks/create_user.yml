@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+    - name: create gandalf user
+      tags: always
+      user:
+        name: gandalf
+        groups: root
