@@ -1,5 +1,5 @@
 # Infrastructure:
-I'm running this on my homelab using Debian. Proxmox in KVM as the hypervisor. 16 cores and 25G memory. No playbooks agains network equipment as I don't have access to it. IPS with Snort/Ossec and logging with Zabbix for basic events are sent to a basic Debian instance.
+I'm running this on my homelab using Debian. Proxmox in KVM as the hypervisor. 16 cores and 25G memory. No playbooks against network equipment as I don't have access to it. IPS with Snort/Ossec and logging with Zabbix for basic events are sent to a Debian instance.
 
 ## Servers:
 * ubuntu-ctrlr = ansible and k8s controller.
