@@ -35,6 +35,7 @@ This is just a demo. See Snort and Suricata config files.
 
 ## Screenshots
 ![proxmox dashboard](https://github.com/oshebj/linux-showcase/blob/main/proxmox-dash.png)
+![simple ansible](https://github.com/oshebj/linux-showcase/blob/main/sample-ansible.png)
 ![snort3 installed](https://github.com/oshebj/linux-showcase/blob/main/snort-installed.png)
 ![snort3 icmp test](https://github.com/oshebj/linux-showcase/blob/main/snort-icmp-example.png)
 ![grafana dashboard](https://github.com/oshebj/linux-showcase/blob/main/grafana-dash.png)
