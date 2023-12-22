@@ -21,6 +21,9 @@
 * VMs: micke / 123
 * Windows: micke@eywa.net / 123
 
+*Metrics:*
+* Grafana: admin / 12345
+
 ## Templates within Proxmox
 * Ubuntu with Cloud-init drive, ssd emulated + qemu guest agent.
 * Ubuntu k8s, same as above, but with k8s packages installed and ready to join the cluster.
