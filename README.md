@@ -8,7 +8,7 @@ I'm running this on my homelab using Debian. Proxmox in KVM as the hypervisor. 1
 
 ## Templates:
 * ubuntu-22.04-template = Template using Cloud-Init with ssd emulation and QEMU agent installed along with the "showcase" ssh-key.
-*ubuntu-k8s-template = k8s node ready to use
+* ubuntu-k8s-template = k8s node ready to use
 
 ## Credentials
 * proxmox:
