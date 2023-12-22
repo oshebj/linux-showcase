@@ -1,0 +1,23 @@
+# block http requests to a specific url
+alert http any any -> any any (msg:"blocking access to malicious site"; uricontent:"/malicious-url"; sid:100001; rev:1;)
+
+# detect ssh brute force attempts
+alert tcp any any -> any 22 (msg:"possible SSH brute force attempt"; flow:to_server,established; content:"SSH-"; threshold:type threshold, track by_src, count 5, seconds 60; sid:100002; rev:1;)
+
+# detect dns requests for known malicious domains
+alert dns any any -> any any (msg:"possible DNS request for malicious domain"; dns_qry_name:"malicious-domain.com"; sid:100003; rev:1;)
+
+# block outgoing smtp traffic
+alert tcp any any -> any 25 (msg:"blocking outgoing SMTP traffic"; flow:to_server; sid:100004; rev:1;)
+
+# detect large outbound data transfer
+alert any any -> any any (msg:"large outbound data transfer detected"; byte_test: to_client, > 1000000, track by_src, count 1; sid:100005; rev:1;)
+
+# detect port scanning
+alert ip any any -> any any (msg:"possible port scanning detected"; flags:S; threshold: type threshold, track by_src, count 5, seconds 60; sid:100006; rev:1;)
+
+# block p2p traffic
+drop ip any any -> any any (msg:"blocking P2P traffic"; pcre:"/BitTorrent|Gnutella|ED2K/"; sid:100007; rev:1;)
+
+# detect malware communication
+alert ip any any -> any any (msg:"possible malware communication"; content:"malware-signature"; sid:100008; rev:1;)
