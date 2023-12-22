@@ -1,18 +1,14 @@
 ---
-- name: Install basic applications on systems.
+- name: Uninstall basic applications on systems
   hosts: all
   become: true
 
   tasks:
-    - name: Update package cache
+    - name: Update package cache and uninstall essential packages
       apt:
         update_cache: yes
-
-    - name: Install vim, screenfetch, and tmux
-      apt:
-        name: "{{ item }}"
+        name:
+          - vim
+          - screenfetch
+          - tmux
         state: absent
-      loop:
-        - vim
-        - screenfetch
-        - tmux
